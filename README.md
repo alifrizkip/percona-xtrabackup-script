@@ -2,8 +2,8 @@
 
 Create user mysql for xtrabackup :
 ```
-CREATE USER 'xtrabackup'@'localhost' IDENTIFIED BY 'percona';
-GRANT RELOAD, LOCK TABLES, REPLICATION CLIENT ON *.* TO 'xtrabackup'@'localhost';
+CREATE USER 'backup'@'localhost' IDENTIFIED BY 'backup';
+GRANT RELOAD, LOCK TABLES, REPLICATION CLIENT ON *.* TO 'backup'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
